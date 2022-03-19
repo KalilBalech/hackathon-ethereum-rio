@@ -1,17 +1,15 @@
 // npm install @thirdweb-dev/react @thirdweb-dev/sdk ethers;
 
-const fs = require('fs');
-const fetch = require('node-fetch');
-const FormData = require('form-data');
+function mintNFT(){
 
-let file = document.getElementById("upload-file").files[0]
+  let file = document.querySelector('input[type="file"]')
 let nftName = document.getElementById("name").value;
 let nftDescription = document.getElementById("description").value;
 let walletAddress = document.getElementById("address").value;
 
 const form = new FormData();
 
-form.append('file', file);
+form.append('file', file.files[0]);
 
 const options = {
   method: 'POST',
@@ -21,9 +19,6 @@ const options = {
   },
 };
 
-function mintNFT(){
-
-  alert("foi")
 
   fetch("https://api.nftport.xyz/v0/mints/easy/files?" + new URLSearchParams({
   chain: 'rinkeby',

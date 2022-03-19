@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style-2.css">
+    <link rel="stylesheet" href="style-2.css">
     <title>Mint your NFT</title>
 </head>
 <body>
@@ -13,10 +13,13 @@
             <a class="logo" href="index.html">
                 <img src="images/Logo_Favel.png" alt="Logo">
             </a>
+            <button id='loginButton' onclick="" >Conecte sua carteira</button>
+            <p id='userWallet' ></p>
         </header>
         <section class="first">
             <h1 class="main-title"> Create Your <span>NFT</span> And Show <br> The World The <span> Brazilian Art</span></h1>
             <h2 class="main-subtitle">Sell Your Art And <span> Increase Your Impact</span></h2>
+            
             <form class="form">
                 <div class="upload-file">
                     <label for="upload-file">Upload File</label>
@@ -49,6 +52,54 @@
             <h3 class="copyright">Copyright © 2022 favelART, Inc.</h3>
         </div>
     </footer>
-    <script src="/javascript/index-2.js" ></script>
+    <script>
+        window.userWalletAddress = null
+    const loginButton = document.getElementById('loginButton')
+    const userWallet = document.getElementById('userWallet')
+
+    function toggleButton() {
+      if (!window.ethereum) {
+        loginButton.innerText = 'MetaMask is not installed'
+        
+        
+        return false
+      }
+
+      loginButton.addEventListener('click', loginWithMetaMask)
+    }
+
+    async function loginWithMetaMask() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        .catch((e) => {
+          console.error(e.message)
+          return
+        })
+      if (!accounts) { return }
+
+      window.userWalletAddress = accounts[0]
+      userWallet.innerText = window.userWalletAddress
+      loginButton.innerText = 'Desconecte sua carteira'
+
+      loginButton.removeEventListener('click', loginWithMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', signOutOfMetaMask)
+      }, 200)
+    }
+
+    function signOutOfMetaMask() {
+      window.userWalletAddress = null
+      userWallet.innerText = ''
+      loginButton.innerText = 'Conecte sua carteira'
+
+      loginButton.removeEventListener('click', signOutOfMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', loginWithMetaMask)
+      }, 200)
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleButton()
+    });
+    </script>
 </body>
 </html>

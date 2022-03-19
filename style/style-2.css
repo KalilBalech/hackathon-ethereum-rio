@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.first{
+    padding-bottom: 40px;
+}
+header{
+    box-shadow: 2px solid black;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 10%;
+}
+img{
+    height: 100px;
+    display:inline;
+}
+.navbar{
+    display: inline ;
+    margin: 20px;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+ul{
+    display: flex;
+}
+li{
+    text-decoration: none;
+    margin-left: 20px;
+}
+li a{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.mint-nft-navbar{
+    color: #b843d6;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/images/first-section-background.svg") no-repeat;
+    background-size: cover;
+}
+.main-title{
+    font-size: 64px;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main-title span{
+    color: #b843d6;
+}
+.main-subtitle{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 65px;
+}
+/*------------------------- form --------------------------*/
+
+input{
+    width: 30vw;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #b843d6;
+    border-radius: 5px;
+    outline: none;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form{
+    border: 1px solid #b843d6;
+    background-color: white;
+    width: 50vw;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 40px 10vw;
+}
+
+.form div{
+    margin-top: 40px;
+}
+
+.form div[first-child]{
+    margin-top:0;
+}
+
+#mint-button{
+    background-color: #b843d6;
+    color: black;
+    border: none;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+#mint-button:hover{
+    cursor: pointer;
+}
+
+/*--------------------footer -----------------------------*/
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.left .email{
+    color:#b843d6;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.right h3{
+    color: white;
+}

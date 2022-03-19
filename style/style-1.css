@@ -43,13 +43,13 @@ li a{
 
 }
 .mint-nft-navbar{
-    color: #b843d6;
+    color: #00f0ff;
 }
 .first{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("/images/first-section-background.svg") no-repeat;
+    background: url("../images/fundo_azul.png") no-repeat;
     background-size: cover;
 }
 .main-title{
@@ -59,7 +59,7 @@ li a{
     text-align: center;
 }
 .main-title span{
-    color: #b843d6;
+    color: #00f0ff;
 }
 .main-subtitle{
     text-align: center;
@@ -71,12 +71,12 @@ li a{
     /* background-color: #b843d6; */
     border-radius: 10px;
     margin-bottom: 40px;
-    background:linear-gradient(rgba(214, 138, 231, 1), rgba(184, 67, 214, 1));
+    background:linear-gradient(#bdfbff, #00f0ff);
 }
 
 #mint-nft-button:hover{
     cursor: pointer;
-    background: linear-gradient(rgba(184, 67, 214, 1), rgba(214, 138, 231, 1));
+    background: linear-gradient(#00f0ff, #bdfbff);
 }
 
 #mint-nft-button h3{
@@ -138,7 +138,7 @@ li a{
 }
 
 .course-left div{
-    background-color: #b843d6;
+    background-color: #00f0ff;
     color: black;
     margin-top: 40px;
     font-size: 20px;
@@ -148,7 +148,7 @@ li a{
 }
 
 .course-left div:hover{
-    background-color: #cc73e2;
+    background-color: #a4f9ff;
     cursor: pointer;
 }
 
@@ -199,7 +199,7 @@ li a{
     width: 50vw;
     display: flex;
     justify-content: space-between;
-    background-color: #b843d6;
+    background-color: #00f0ff;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 20px;
@@ -240,7 +240,7 @@ footer{
     margin-left: 10%;
 }
 .left .email{
-    color:#b843d6;
+    color:#00f0ff;
     font-size: 16px;
     margin-left: 10px;
 }
@@ -297,7 +297,7 @@ footer{
 
 .card .icon {
     position: relative;
-    background-color: #B843D6;
+    background-color: #00f0ff;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -321,7 +321,6 @@ footer{
   .h1-css{
       font-size: 37px;
       font-weight: 700;
-      /* margin-bottom: 21px; */
   }
 
   .h3-css{
@@ -353,28 +352,3 @@ footer{
     font-size: 25px;
     margin-bottom: 10px;
   }
-
-
-
-  /* .buttonClass {
-    font-size:22px;
-    font-family:Georgia;
-    width:140px;
-    height:50px;
-    border-width:1px;
-    color:rgba(0, 0, 0, 1);
-    border-color:rgba(126, 0, 151, 1);
-    font-weight:bold;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-    box-shadow: 0px 0px 0px 2px rgba(123, 0, 148, 1);
-    text-shadow: 0px 1px 0px #283966;
-    background:linear-gradient(rgba(232, 173, 246, 1), rgba(184, 67, 214, 1));
-    text-align: center;
-  }
-  
-  .buttonClass:hover {
-    background: linear-gradient(rgba(184, 67, 214, 1), rgba(232, 173, 246, 1));
-  } */

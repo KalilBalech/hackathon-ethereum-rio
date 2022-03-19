@@ -85,6 +85,7 @@ li a{
 /*second section --------------------------------------*/
 
 .second{
+    padding-top: 40px;
     background-color: #fafafa;
     padding-bottom: 40px;
     display: flex;
@@ -241,3 +242,103 @@ footer{
 .right h3{
     color: white;
 }
+
+.about{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box-text{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 56px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cointainer-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px;
+}
+
+.card{
+    height: 526px;
+    padding: 32px;
+    border-radius: 0.375rem;
+    max-width: 24rem;
+    border: 1px solid;
+    border-color: #cccccc;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .icon {
+    position: relative;
+    background-color: #B843D6;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .card a{
+      font-size: 16px;
+      color: blue;
+  }
+
+  .h1-css{
+      font-size: 37px;
+      font-weight: 700;
+      /* margin-bottom: 21px; */
+  }
+
+  .h3-css{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.6;
+  }
+
+  .saibamais-css{
+      font-weight: 600;
+  }
+
+  .join{
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 16px;
+  }
+
+  .going-to-create{
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .type-of-art{
+    font-weight: 500;
+    color: #666666;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }

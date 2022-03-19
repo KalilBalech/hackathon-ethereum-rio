@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    box-shadow: 2px solid grey;
+}
+img{
+    height: 90px;
+}
+.navbar{
+    display: inline ;
+}
+ul{
+    display: flex;
+}
+li{
+    text-decoration: none;
+    margin-left: 20px;
+}
+li a{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.mint-nft{
+    color: #b843d6;
+
+}

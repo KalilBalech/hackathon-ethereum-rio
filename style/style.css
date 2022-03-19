@@ -76,6 +76,23 @@ li a{
 .first img{
     margin-bottom: 40px;
 }
+
+/*second section --------------------------------------*/
+
+.second{
+    background-color: #fafafa;
+}
+
+/*about --------------------------------------*/
+
+/*course --------------------------------------*/
+
+/*mint-nft --------------------------------------*/
+
+
+
+/* footer --------------------------------------------- */
+
 footer{
     background-color: black;
     display: flex;

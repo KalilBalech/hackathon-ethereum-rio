@@ -64,16 +64,19 @@ li a{
     margin-bottom: 65px;
 }
 #mint-nft-button{
-    background-color: #b843d6;
+    /* background-color: #b843d6; */
     border-radius: 10px;
     margin-bottom: 40px;
+    background:linear-gradient(rgba(214, 138, 231, 1), rgba(184, 67, 214, 1));
 }
 
 #mint-nft-button:hover{
     cursor: pointer;
+    background: linear-gradient(rgba(184, 67, 214, 1), rgba(214, 138, 231, 1));
 }
 
 #mint-nft-button h3{
+    font-family:Georgia;
     color: black;
     font-size: 30px;
     margin: 10px 20px;
@@ -141,7 +144,7 @@ li a{
 }
 
 .course-left div:hover{
-    background-color: #b85ece;
+    background-color: #cc73e2;
     cursor: pointer;
 }
 
@@ -169,17 +172,21 @@ li a{
 
 .mint-nft h2{
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #666;
 }
 
 .mint-nft h1{
     font-size: 64px;
+    font-weight: 700;
     margin-top: 20px;
 }
 
 .mint-nft h3{
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 28px;
+    font-size: 24px;
+    font-weight: 500;
     color: #666;
 }
 
@@ -342,3 +349,26 @@ footer{
     font-size: 25px;
     margin-bottom: 10px;
   }
+
+  /* .buttonClass {
+    font-size:22px;
+    font-family:Georgia;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:rgba(0, 0, 0, 1);
+    border-color:rgba(126, 0, 151, 1);
+    font-weight:bold;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    box-shadow: 0px 0px 0px 2px rgba(123, 0, 148, 1);
+    text-shadow: 0px 1px 0px #283966;
+    background:linear-gradient(rgba(232, 173, 246, 1), rgba(184, 67, 214, 1));
+    text-align: center;
+  }
+  
+  .buttonClass:hover {
+    background: linear-gradient(rgba(184, 67, 214, 1), rgba(232, 173, 246, 1));
+  } */

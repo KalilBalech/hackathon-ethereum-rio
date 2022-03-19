@@ -7,12 +7,11 @@ a{
     text-decoration: none;
     color: black;
 }
-.first-page{
-    height: 100vh;
-    width: 100vw;
+.first{
+    padding-bottom: 40px;
 }
 header{
-    box-shadow: 2px solid grey;
+    box-shadow: 2px solid black;
     display:flex;
     justify-content: space-between;
 }
@@ -63,11 +62,59 @@ li a{
 }
 .main-subtitle{
     text-align: center;
-    color: #666;
+    color: black;
     font-size: 24px;
     margin-bottom: 65px;
 }
+/*------------------------- form --------------------------*/
 
+input{
+    width: 30vw;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #b843d6;
+    border-radius: 5px;
+    outline: none;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form{
+    border: 1px solid #b843d6;
+    background-color: white;
+    width: 50vw;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 40px 10vw;
+}
+
+.form div{
+    margin-top: 40px;
+}
+
+.form div[first-child]{
+    margin-top:0;
+}
+
+#mint-button{
+    background-color: #b843d6;
+    color: black;
+    border: none;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+#mint-button:hover{
+    cursor: pointer;
+}
+
+/*--------------------footer -----------------------------*/
 footer{
     background-color: black;
     display: flex;

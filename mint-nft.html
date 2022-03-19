@@ -17,10 +17,10 @@
         <section class="first">
             <h1 class="main-title"> Create Your <span>NFT</span> And Show <br> The World The <span> Brazilian Art</span></h1>
             <h2 class="main-subtitle">Sell Your Art And <span> Increase Your Impact</span></h2>
-            <div class="form">
+            <form class="form">
                 <div class="upload-file">
                     <label for="upload-file">Upload File</label>
-                    <input type="file">
+                    <input type="file" id="upload-file">
                 </div>
                 <div class="name-input">
                     <label for="name">NFT name</label>
@@ -35,9 +35,9 @@
                     <input type="text" id="address">
                 </div>
                 <div>
-                    <input id="mint-button" type="submit" value="Mint NFT">
+                    <button id="mint-button" type="submit" onclick="mintNFT()">Mint NFT</button>
                 </div>
-            </div>
+            </form>
         </section>
     </section>
     <footer>
@@ -49,5 +49,6 @@
             <h3 class="copyright">Copyright © 2022 favelART, Inc.</h3>
         </div>
     </footer>
+    <script src="/javascript/index-2.js" ></script>
 </body>
 </html>

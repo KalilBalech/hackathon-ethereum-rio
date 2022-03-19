@@ -114,6 +114,23 @@ label{
     cursor: pointer;
 }
 
+#loginButton {
+    background-color: #00f0ff;
+    color: black;
+    border: none;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    margin:auto;
+    
+}
+
+#userWallet {
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin:auto
+}
+
 /*--------------------footer -----------------------------*/
 footer{
     background-color: black;

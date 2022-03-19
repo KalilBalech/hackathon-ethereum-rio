@@ -38,7 +38,7 @@ li a{
     font-weight: 600;
 
 }
-.mint-nft{
+.mint-nft-navbar{
     color: #b843d6;
 }
 .first{
@@ -68,6 +68,11 @@ li a{
     border-radius: 10px;
     margin-bottom: 40px;
 }
+
+#mint-nft-button:hover{
+    cursor: pointer;
+}
+
 #mint-nft-button h3{
     color: black;
     font-size: 30px;
@@ -89,6 +94,60 @@ li a{
 
 /*mint-nft --------------------------------------*/
 
+.mint-nft{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint-nft h2{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.mint-nft h1{
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.mint-nft h3{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.nft-type{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b843d6;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.nft-type:hover{
+    cursor: pointer;
+}
+
+.nft-type div{
+    display: inline-block;
+}
+
+.p-nft-type{
+    font-size: 36px;
+}
+
+.nft-type img{
+    height: 48px;
+}
+
+.nft-image{
+    margin-top: 40px;
+}
+
 
 
 /* footer --------------------------------------------- */
@@ -97,6 +156,7 @@ footer{
     background-color: black;
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 .left{
     display: flex;

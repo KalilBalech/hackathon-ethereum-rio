@@ -196,17 +196,16 @@ li a{
 
 .nft-type{
     margin-top: 20px;
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
-    background-color: #00f0ff;
-    border: 1px solid black;
+    width: 15vw;
+    background:linear-gradient(#bdfbff, #00f0ff);
     border-radius: 10px;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .nft-type:hover{
     cursor: pointer;
+    background: linear-gradient(#00f0ff, #bdfbff);
 }
 
 .nft-type div{

@@ -48,7 +48,7 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("/images/first-section-background.svg") no-repeat;
+    background: url("") no-repeat;
     background-size: cover;
 }
 .main-title{

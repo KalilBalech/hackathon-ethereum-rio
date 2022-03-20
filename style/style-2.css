@@ -172,7 +172,9 @@ label{
     margin-top:0;
 }
 
-#upload{
+
+
+.form-end button, .form-end a{
     background-color: #00f0ff;
     color: black;
     border: none;
@@ -180,8 +182,17 @@ label{
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
-    margin-left: 20px;
 }
+
+.form-end a {
+    margin-left: auto;
+}
+
+#upload:hover, .form-end a:hover {
+    background-color: #01ddec;
+}
+
+
 
 #mint-button:hover{
     cursor: pointer;

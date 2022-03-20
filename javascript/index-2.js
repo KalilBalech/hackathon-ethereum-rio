@@ -19,6 +19,9 @@ async function login(){
      
       user.save();
       document.getElementById("view").href = "https://testnets.opensea.io/" +  ethereum.selectedAddress ;
+      adrs = ethereum.selectedAddress;
+     document.getElementById("submit").textContent = "Wallet Connected" + " " + adrs[0]+adrs[1]+adrs[2]+adrs[3]+adrs[4] +
+                                                                         "..."+ adrs[adrs.length-3]+ adrs[adrs.length-2]+ adrs[adrs.length-1];
   })
 }
 

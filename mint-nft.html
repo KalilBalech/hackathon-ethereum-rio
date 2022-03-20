@@ -14,8 +14,7 @@
                 <img src="images/Logo_Favel.png" alt="Logo">
             </a>
             
-            <button id='loginButton' onclick="" >Conecte sua carteira </button>
-            <p id='userWallet'></p>
+            <button class="btn btn-primary" id="submit" onclick="login();">Connect MetaMask</button>
         </header>
         <section class="first">
             <h1 class="main-title"> Create Your <span>NFT</span> And Show <br> The World The <span> Brazilian Art</span></h1>
@@ -24,7 +23,7 @@
             <form class="form">
                 <div class="upload-file">
                     <label for="upload-file">Upload File</label>
-                    <input type="file" id="upload-file">
+                    <input type="file" id="file">
                 </div>
                 <div class="name-input">
                     <label for="name">NFT name</label>
@@ -34,12 +33,12 @@
                     <label for="description">NFT description</label>
                     <input type="text" id="description">
                 </div>
-                <div class="wallet-address-input">
+                <!--<div class="wallet-address-input">
                     <label for="address">Wallet Address</label>
                     <input type="text" id="address">
-                </div>
+                </div> -->
                 <div>
-                    <button id="mint-button" type="submit" onclick="mintNFT()">Mint NFT</button>
+                    <button  class="btn btn-primary" type="button" id="upload" onclick="up();">Upload and Mint</button>
                 </div>
             </form>
         </section>
@@ -53,10 +52,14 @@
             <h3 class="copyright">Copyright © 2022 favelART, Inc.</h3>
         </div>
     </footer>
-    <script src="javascript/index-2.js">
-    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="javascript/index-2.js"> </script>
+
     
-    <script src="javascript/index-21.js">
-    </script>
+    
+    <!--<script src="javascript/index-21.js">
+    </script> -->
 </body>
 </html>

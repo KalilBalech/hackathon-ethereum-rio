@@ -66,12 +66,6 @@ li a{
     margin-bottom: 20px;
 }
 
-/* .cards-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} */
-
   footer{
     background-color: black;
     display: flex;
@@ -148,7 +142,6 @@ input{
 
 #loginButton {
     border-radius: 0.7rem;
-    /* margin-bottom: 40px; */
     background:linear-gradient(#bdfbff, #00f0ff);
     font-family:Georgia;
     color: black;

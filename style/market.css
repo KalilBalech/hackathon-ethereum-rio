@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -38,19 +41,19 @@ img{
 
 ul{
     display: flex;
+    align-items: center;
 }
 
 li{
     text-decoration: none;
     list-style: none;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 li a{
     color: black;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-
 }
 
 .space-one{
@@ -152,12 +155,17 @@ input{
 }
 
 #loginButton {
+    border: 0;
     border-radius: 0.7rem;
-    background:linear-gradient(#bdfbff, #00f0ff);
-    font-family:Georgia;
     color: black;
-    font-size: 1.4rem;
+    background-color: #00f0ff;
+    font-size: 1rem;
     margin: 0 10% 0 auto;
+    font-weight: 600;
+}
+
+#loginButton:hover {
+    background-color: #01ddec;
 }
 
 .card-texto{

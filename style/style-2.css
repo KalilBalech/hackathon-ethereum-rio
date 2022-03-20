@@ -65,6 +65,9 @@ li a{
 }
 
 #submit{
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
     background-color: #00f0ff;
     color: black;
     padding: 10px 20px;
@@ -73,6 +76,11 @@ li a{
     width: fit-content;
     justify-self: end;
     margin: 30px 10vw 0 0;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #01ddec;
 }
 
 .first{
@@ -182,14 +190,16 @@ label{
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .form-end a {
-    margin-left: auto;
+    margin-left: 50px;
 }
 
 #upload:hover, .form-end a:hover {
     background-color: #01ddec;
+    cursor: pointer;
 }
 
 

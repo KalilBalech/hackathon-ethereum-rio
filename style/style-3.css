@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 img{
@@ -28,13 +30,13 @@ header{
 
 header div{
     margin-right: 10vw;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 header div img{
     height: 60px;
-    border-radius: 10px;
-    
+    /* border-radius: 10px; */
 }
 
 .logo img{

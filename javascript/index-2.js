@@ -1,34 +1,75 @@
-// npm install @thirdweb-dev/react @thirdweb-dev/sdk ethers;
+Moralis.initialize("3q4SgmTjl0VSId3TfehuSGaavhtaUVoMcquNaJ2k"); // Application id from moralis.io
+Moralis.serverURL = "https://wrnhdac0kyx9.usemoralis.com:2053/server"; //Server url from moralis.io
 
-function mintNFT(){
+const nft_contract_address = "0x0Fb6EF3505b9c52Ed39595433a21aF9B5FCc4431" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
+/*
+Available deployed contracts
+Ethereum Rinkeby 0x0Fb6EF3505b9c52Ed39595433a21aF9B5FCc4431
+Polygon Mumbai 0x351bbee7C6E9268A1BF741B098448477E08A0a53
+BSC Testnet 0x88624DD1c725C6A95E223170fa99ddB22E1C6DDD
+*/
 
-  let file = document.querySelector('input[type="file"]')
-let nftName = document.getElementById("name").value;
-let nftDescription = document.getElementById("description").value;
-let walletAddress = document.getElementById("address").value;
+const web3 = new Web3(window.ethereum);
 
-const form = new FormData();
+//frontend logic
 
-form.append('file', file.files[0]);
-
-const options = {
-  method: 'POST',
-  body: form,
-  headers: {
-    "Authorization": "578d8550-cfaf-4ee1-b301-6d03fa62311d",
-  },
-};
-
-
-  fetch("https://api.nftport.xyz/v0/mints/easy/files?" + new URLSearchParams({
-  chain: 'rinkeby',
-  name: nftName,
-  description: nftDescription,
-  mint_to_address: walletAddress,
-}), options)
-  .then(function(response) { return response.json() })
-  .then(function(responseJson) {
-    // Handle the response
-    console.log(responseJson);
+async function login(){
+  
+  Moralis.Web3.authenticate().then(function (user) {
+     
+      user.save();
+      
   })
 }
+
+
+async function botao () {
+  alert("foi chamada");
+}
+async function up(){
+  
+  const fileInput = document.getElementById("file");
+  const data = fileInput.files[0];
+  const imageFile = new Moralis.File(data.name, data);
+  
+  await imageFile.saveIPFS();
+  const imageURI = imageFile.ipfs();
+  alert(imageURI);
+  const metadata = {
+    "name":document.getElementById("name").value,
+    "description":document.getElementById("description").value,
+    "image":imageURI
+  }
+  const metadataFile = new Moralis.File("metadata.json", {base64 : btoa(JSON.stringify(metadata))});
+  await metadataFile.saveIPFS();
+  const metadataURI = metadataFile.ipfs();
+  const txt = await mintToken(metadataURI).then(notify) 
+ 
+}
+
+async function mintToken(_uri){
+  const encodedFunction = web3.eth.abi.encodeFunctionCall({
+    name: "mintToken",
+    type: "function",
+    inputs: [{
+      type: 'string',
+      name: 'tokenURI'
+      }]
+  }, [_uri]);
+
+  const transactionParameters = {
+    to: nft_contract_address,
+    from: ethereum.selectedAddress,
+    data: encodedFunction
+  };
+  const txt = await ethereum.request({
+    method: 'eth_sendTransaction',
+    params: [transactionParameters]
+  });
+  return txt
+}
+
+async function notify(_txt){
+  document.getElementById("resultSpace").innerHTML =  
+  `<input disabled = "true" id="result" type="text" class="form-control" placeholder="Description" aria-label="URL" aria-describedby="basic-addon1" value="Your NFT was minted in transaction ${_txt}">`;
+} 

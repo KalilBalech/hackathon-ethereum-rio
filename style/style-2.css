@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -13,7 +16,7 @@ a{
 header{
     box-shadow: 2px solid black;
     display:flex;
-    
+    justify-content: space-between;
 }
 .logo{
     margin-left: 10%;
@@ -43,6 +46,16 @@ li a{
 }
 .mint-nft-navbar{
     color: #00f0ff;
+}
+#submit{
+    background-color: #00f0ff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    justify-self: end;
+    margin: 30px 10vw 0 0;
 }
 .first{
     display: flex;
@@ -102,12 +115,14 @@ label{
     margin-top:0;
 }
 
-#mint-button{
+#upload{
     background-color: #00f0ff;
     color: black;
     border: none;
     width: fit-content;
     padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 #mint-button:hover{

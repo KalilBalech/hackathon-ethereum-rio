@@ -1,4 +1,4 @@
-# ETH-Rio-FavelART
+# ETHRio Hackathon FavelART
 
 # Background
 Favelas são lugares culturalmente e artisticamente muito ricos com pessoas talentosas, que, muitas vezes, não são reconhecidas pela sociedade. 
@@ -10,7 +10,8 @@ Os fatores que contribuem para a manutenção da realidade social da favela:
 
 - A falta de uma comunidade de ajuda mútua que auxilie o artista na sua produção, divulgação e aprendizado.
 
-# Introduction to FavelART
+# Introdução 
+
 Tendo em vista esse problema, propomos a solução de criar a FavelART DAO, direcionada e governada por artistas marginalizados de favela. 
 Ela possuirá uma plataforma focada na:
  

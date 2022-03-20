@@ -17,20 +17,24 @@
             <button class="btn btn-primary" id="submit" onclick="login();">Connect MetaMask</button>
         </header>
         <section class="first">
-            <h1 class="main-title"> Create Your <span>NFT</span> And Show <br> The World The <span> Brazilian Art</span></h1>
-            <h2 class="main-subtitle">Sell Your Art And <span> Increase Your Impact</span></h2>
+            <div class="intro">
+                <h1 class="main-title"> Create Your <span>NFT</span> And Show <br> The World The <span> Brazilian Art</span></h1>
+                <h2 class="main-subtitle">Sell Your Art And <span> Increase Your Impact</span></h2>
+            </div>
             
             <form class="form">
+                <img src="" alt="preview" id="preview">
+                <a href="" class="os-link"></a>
                 <div class="upload-file">
                     <label for="upload-file">Upload File</label>
                     <input type="file" id="file">
                 </div>
                 <div class="name-input">
-                    <label for="name">NFT name</label>
+                    <label for="name">Name</label><br>
                     <input type="text" id="name">
                 </div>
                 <div class="description-input">
-                    <label for="description">NFT description</label>
+                    <label for="description">Description</label><br>
                     <input type="text" id="description">
                 </div>
                 <!--<div class="wallet-address-input">
@@ -40,6 +44,8 @@
                 <div>
                     <button  class="btn btn-primary" type="button" id="upload" onclick="up();">Upload and Mint</button>
                 </div>
+
+               <a href="" id="view" >view on opensea</a>
             </form>
         </section>
     </section>

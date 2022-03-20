@@ -6,47 +6,64 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-a{
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
     text-decoration: none;
     color: black;
 }
-.first{
-    padding-bottom: 40px;
-}
+
 header{
     box-shadow: 2px solid black;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
+
 .logo{
     margin-left: 10%;
 }
+
 img{
     height: 100px;
     display:inline;
 }
+
 .navbar{
     display: inline ;
     margin: 20px;
     margin-right: 10%;
     margin-top: 30px;
 }
+
 ul{
     display: flex;
 }
+
 li{
     text-decoration: none;
     margin-left: 20px;
 }
+
 li a{
     color: black;
     font-size: 24px;
     font-weight: 600;
-
 }
+
 .mint-nft-navbar{
     color: #00f0ff;
 }
+
 #submit{
     background-color: #00f0ff;
     color: black;
@@ -57,13 +74,21 @@ li a{
     justify-self: end;
     margin: 30px 10vw 0 0;
 }
+
 .first{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    background: url("") no-repeat;
+    /* background: url("../images/fundo_azul.png") no-repeat; */
     background-size: cover;
 }
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
 .main-title{
     font-size: 64px;
     color: black;
@@ -81,30 +106,62 @@ li a{
 }
 /*------------------------- form --------------------------*/
 
-input{
+.upload-file {
+    display: flex;
+}
+
+.upload-file, .name-input, .description-input {
+    margin: 0 auto;
+}
+
+input {
     width: 30vw;
     padding: 5px 10px;
     font-size: 16px;
-    border: 1px solid #000000;
+    border: 2px solid #ced4da;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     border-radius: 5px;
     outline: none;
 }
 
+input:hover {
+    border-color: #979b9e;
+}
+
+.upload-file input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px dashed #ced4da;
+    border-radius: 5px;
+    outline: none;
+    width: 20vw;
+    height: 40px;
+    margin: auto 20px;
+}
+
 label{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: auto 0;
+}
+
+#preview {
+    margin: 0 auto;
+    width: 30vh;
+    height: auto;
 }
 
 .form{
-    border: 1px solid #000000;
+    border: 1px solid #ced4da;
     background-color: white;
-    width: 50vw;
-    padding: 20px 40px;
-    border-radius: 20px;
+    width: 40vw;
+    margin: 0 40px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    padding: 40px 10vw;
+    padding: 40px 20px;
 }
 
 .form div{
@@ -123,6 +180,7 @@ label{
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
+    margin-left: 20px;
 }
 
 #mint-button:hover{

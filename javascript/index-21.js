@@ -22,7 +22,7 @@
       if (!accounts) { return }
 
       window.userWalletAddress = accounts[0]
-      userWallet.innerText = window.userWalletAddress
+      //userWallet.innerText = window.userWalletAddress
       loginButton.innerText = 'Desconecte sua carteira'
 
       loginButton.removeEventListener('click', loginWithMetaMask)

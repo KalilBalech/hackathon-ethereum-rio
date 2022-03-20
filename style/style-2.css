@@ -13,7 +13,7 @@ a{
 header{
     box-shadow: 2px solid black;
     display:flex;
-    justify-content: space-between;
+    
 }
 .logo{
     margin-left: 10%;
@@ -115,20 +115,19 @@ label{
 }
 
 #loginButton {
-    background-color: #00f0ff;
+    border-radius: 0.7rem;
+    margin-bottom: 40px;
+    background:linear-gradient(#bdfbff, #00f0ff);
+    font-family:Georgia;
     color: black;
-    border: none;
-    width: fit-content;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    margin:auto;
-    
+    font-size: 1.4rem;
+    margin: 0.7rem 10% 0 auto;
 }
 
 #userWallet {
-    margin-bottom: 40px;
+    margin: 20 50;
+   
     font-weight: bold;
-    margin:auto
 }
 
 /*--------------------footer -----------------------------*/

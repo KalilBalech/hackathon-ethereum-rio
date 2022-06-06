@@ -1,7 +1,7 @@
-Moralis.initialize("3q4SgmTjl0VSId3TfehuSGaavhtaUVoMcquNaJ2k"); // Application id from moralis.io
-Moralis.serverURL = "https://wrnhdac0kyx9.usemoralis.com:2053/server"; //Server url from moralis.io
+Moralis.initialize("DQ9k1IT1NaeakKnvjtY6KScYHB1R1IPmDIWNI3jz"); // Application id from moralis.io
+Moralis.serverURL = "https://fri5wsjyupdm.usemoralis.com:2053/server"; //Server url from moralis.io
 
-const nft_contract_address = "0x5405F4bfbDC03C6443EbeBFd9936Fb78d0c3615f" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
+const nft_contract_address = "0x2C5d2Ec6d5716D3075E745D58B0D17d76B0176E4" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
 
 
 const web3 = new Web3(window.ethereum);
@@ -13,7 +13,7 @@ async function login(){
   Moralis.Web3.authenticate().then(function (user) {
      
       user.save();
-      document.getElementById("view").href = "https://testnets.opensea.io/" +  ethereum.selectedAddress ;
+      document.getElementById("view").href = "https://opensea.io/" +  ethereum.selectedAddress ;
       adrs = ethereum.selectedAddress;
      document.getElementById("submit").textContent = "Wallet Connected" + " " + adrs[0]+adrs[1]+adrs[2]+adrs[3]+adrs[4] +
                                                                          "..."+ adrs[adrs.length-3]+ adrs[adrs.length-2]+ adrs[adrs.length-1];
